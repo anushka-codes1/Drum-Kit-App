@@ -50,7 +50,7 @@ function makesound(key) {
 }
 
 function buttonAnimation(key) {
-    let activeButton = document.querySelector("." + key);
+    let activeButton = document.querySelector("#" + key);
     activeButton.classList.add("pressed"); //all classes of css can be added using classList
     setTimeout(function () { //to remove the class after some time
         activeButton.classList.remove("pressed");
