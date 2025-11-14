@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        body {
+        background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+    }
+        h1 {
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+        h2 {
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+        h3 {
+        color: rgb(56, 4, 28);
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+        .set {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+        .drum {
+        width: 165px;
+        height: 165px;
+        border-radius: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(254, 63, 105);
+        text-shadow: #9c0261 1px 1px 2px;
+        background-color: #ff4d6d;
+        box-shadow: 0 4px #d43c5a;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+    }
+        .pressed {
+        box-shadow: 0 0 #d43c5a;
+        transform: translateY(4px);
+        background-color: #ff1e3c;
+    }
+    #w {
+        background-image: url("Images/tom1.png")
+    }
+    #a {
+        background-image: url("Images/tom2.png");
+    }
+    #s {
+        background-image: url("Images/tom3.png");
+    }
+    #d {
+        background-image: url("Images/tom4.png");
+    }
+    #j {
+        background-image: url("Images/snare.png");
+    }
+    #k {
+        background-image: url("Images/crash.png");
+    }
+    #l {
+        background-image: url("Images/kick.png");
+    }
+
+    </style>
+</head>
+<body>
+   <h1>Drum Kit 🥁</h1>
+   <br>
+   <h2>Press the keys to play the drums, and experiment with rhythm!</h2>
+   <br> <br> <br>
+    <div class="set pressed">
+         <button class="drum" id="w">w</button>
+         <button class="drum" id="a">a</button>
+         <button class="drum" id="s">s</button>
+         <button class="drum" id="d">d</button>
+         <button class="drum" id="j">j</button>
+         <button class="drum" id="k">k</button>
+         <button class="drum" id="l">l</button>
+    </div>
+    <script src="index.js"></script>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <h3>Music is Life 🎶</h3>
+    <h3>Created with ❤️ by Anushka Mukherjee</h3>
+</body>
+</html>
