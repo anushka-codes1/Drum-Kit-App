@@ -2,14 +2,14 @@ let NumberofButtons = document.querySelectorAll(".drum").length;
 
 for (let i = 0; i < NumberofButtons; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
-        let buttonInnerHTML = this.innerHTML;//'this' refers to the button that got clicked
+        let buttonInnerHTML = this.id;//'this' refers to the button that got clicked
         makesound(buttonInnerHTML);
         buttonAnimation(buttonInnerHTML);
 
     });
 }
 
-    document.addEventListener("keypress", function (event) {
+    document.addEventListener("keydown", function (event) {
         makesound(event.key);
         buttonAnimation(event.key);
     });
